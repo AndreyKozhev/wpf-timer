@@ -1,0 +1,22 @@
+﻿<Window x:Class="TimerVersion_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimerVersion_1"
+        mc:Ignorable="d"
+        Title="Секундомер" Height="450" Width="800" Initialized="Window_Initialized" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip">
+    
+    <Grid>
+        <Ellipse Name="seconde" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="190" Stroke="Black" VerticalAlignment="Center" Width="190"/>
+        <TextBlock Name="second" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Нажми кнопку ПУСК" VerticalAlignment="Center"/>
+        <Button Name="start" Content="ПУСК" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="114" Margin="340,0,339.6,52" Click="Start_Click" Background="Yellow" BorderBrush="Blue" FontSize="30" Height="46"/>
+        <GroupBox Header="О приложении" HorizontalAlignment="Left" Height="358" VerticalAlignment="Top" Width="119" Margin="10,10,0,0">
+            <Grid>
+                <TextBlock HorizontalAlignment="Center" Margin="10,314,0,0" TextWrapping="Wrap" Text="GitHub 2022" VerticalAlignment="Bottom"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Простой секундомер. Автор: Андрей Кожев" VerticalAlignment="Top" Height="305" Width="81"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
